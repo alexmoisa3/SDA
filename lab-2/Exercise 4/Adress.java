@@ -2,9 +2,10 @@ package ro.unitbv.javadatatype;
 
 public class Adress {
 
-	String street;
-	String city;
-	int number;
+	private String street;
+	private String city;
+	private int number;
+
 	public String getStreet() {
 		return street;
 	}
@@ -17,16 +18,15 @@ public class Adress {
 		return number;
 	}
 
-	public Adress(String City, String Street, int Number)
-	{
-		city=City;
-		street=Street;
-		number=Number;
-		
+	public Adress(String city, String street, int number) {
+		this.city = city;
+		this.street = street;
+		this.number = number;
+
 	}
-	public String getCompleteAdress()
-	{
-		return city+street+number;
+
+	public String getCompleteAdress() {
+		return city + street + number;
 	}
 
 }
