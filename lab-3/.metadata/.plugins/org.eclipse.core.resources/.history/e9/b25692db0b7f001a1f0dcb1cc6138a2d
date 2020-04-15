@@ -1,0 +1,55 @@
+package Paint;
+import java.util.*;
+
+public class Cerc implements Shape {
+	private int raza ;
+	private String fillColor ;
+	private int border;
+	private static final String nume = "Cerc";
+	
+	Cerc(int r, String f , int b){
+		this.raza=r;
+		this.fillColor=f;
+		this.border=b;
+	}
+	
+	Cerc(int r){
+		this.raza=r;
+	}
+	
+	public void draw() {
+	    double dist; 
+	    int radius=raza;
+	    for (int i = 0; i <= 2 * radius; i++) {     
+	    for (int j = 0; j <= 2 * radius; j++) { 
+	        dist = Math.sqrt((i - radius) * (i - radius) + 
+	                         (j - radius) * (j - radius)); 
+
+	        if (dist > radius - 0.5 && dist < radius + 0.5) 
+	        System.out.print("*"); 
+	        else
+	        System.out.print(" "); 
+	    } 
+	    System.out.print("\n"); 
+	    } 
+		
+	    }
+	
+	public void getArea() {
+		System.out.println("Aria cercului este:"+(3.14*raza*raza));	
+	}
+	
+	@Override
+	public void getName() {
+		System.out.println("Acesta este un :"+nume);
+	}
+	
+	public void getHexColor() {
+		System.out.println("Culoarea in format hex este:"+fillColor);
+	}
+	
+	public void getBorderWidth() {
+		System.out.println("Diametrul cercului este:"+(2*raza));
+		
+	}
+	}
