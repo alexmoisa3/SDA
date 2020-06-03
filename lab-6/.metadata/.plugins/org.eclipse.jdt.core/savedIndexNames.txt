@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\alexm\Desktop\Lab6 SDA\.metadata\.plugins\org.eclipse.jdt.core
+2606080199.index
+2103231971.index
