@@ -1,3 +1,4 @@
 # SDA
+Some basic exercises to learn and improve my JAVA level of programming.
 
-Cateva exercitii si laboratoare ce au ca scop dezvoltarea si invatarea limbajului de programare Java.
+
